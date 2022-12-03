@@ -122,6 +122,8 @@ issues:
       text: "G101"
     - path: .go
       text: "S1000"
+    - path: .go
+      text: "builtinShadow"
    
 run:
   skip-dirs:
