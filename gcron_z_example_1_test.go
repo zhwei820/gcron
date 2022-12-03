@@ -8,6 +8,7 @@ package gcron_test
 
 import (
 	"context"
+	"fmt"
 	"testing"
 	"time"
 
@@ -22,4 +23,24 @@ func Test_cronAddSingleton(t *testing.T) {
 		time.Sleep(500 * time.Millisecond)
 	})
 	select {}
+}
+
+func Test_example(t *testing.T) {
+	cron := gcron.New()
+	array := []int64{}
+	cron.AddTimes(ctx, "@every 2s", 1, func(ctx context.Context) {
+		array = append(array, 1)
+	}, "cron1")
+	cron.AddOnce(ctx, "@every 2s", func(ctx context.Context) {
+		array = append(array, 1)
+	}, "cron2")
+	fmt.Println(len(array), cron.Size())
+	cron.Remove("cron2")
+	fmt.Println(len(array), cron.Size())
+	time.Sleep(3000 * time.Millisecond)
+	fmt.Println(len(array), cron.Size())
+	// Output:
+	// 0 2
+	// 0 1
+	// 1 0
 }

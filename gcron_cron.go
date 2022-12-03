@@ -32,16 +32,6 @@ func New() *Cron {
 	}
 }
 
-// // SetLogger sets the logger for cron.
-// func (c *Cron) SetLogger(logger glog.ILogger) {
-// 	c.logger = logger
-// }
-
-// // GetLogger returns the logger in the cron.
-// func (c *Cron) GetLogger() glog.ILogger {
-// 	return c.logger
-// }
-
 // AddEntry creates and returns a new Entry object.
 func (c *Cron) AddEntry(ctx context.Context, pattern string, job JobFunc, times int, isSingleton bool, name ...string) (*Entry, error) {
 	var (
