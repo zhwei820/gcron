@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zhwei820/gcron/gcron"
+	"github.com/zhwei820/gcron"
 	"github.com/zhwei820/log"
 )
 
