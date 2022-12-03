@@ -6,10 +6,20 @@
 
 package gcron_test
 
-// func Example_cronAddSingleton() {
-// 	gcron.AddSingleton(ctx, "* * * * * *", func(ctx context.Context) {
-// 		glog.Print(context.TODO(), "doing")
-// 		time.Sleep(2 * time.Second)
-// 	})
-// 	select {}
-// }
+import (
+	"context"
+	"testing"
+	"time"
+
+	"github.com/zhwei820/gcron/gcron"
+	"github.com/zhwei820/log"
+)
+
+func Test_cronAddSingleton(t *testing.T) {
+	log.InitLogger("test", true, "debug", 3)
+	gcron.AddSingleton(ctx, "* * * * * *", func(ctx context.Context) {
+		log.InfoZ(context.TODO(), "doing")
+		time.Sleep(500 * time.Millisecond)
+	})
+	select {}
+}
