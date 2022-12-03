@@ -21,15 +21,29 @@ type Cron struct {
 	status  *gtype.Int      // Timed task status(0: Not Start; 1: Running; 2: Stopped; -1: Closed)
 	entries *gmap.StrAnyMap // All timed task entries.
 	// logger  glog.ILogger    // Logger, it is nil in default.
+
+	etcdclient EtcdMutexBuilder
 }
 
 // New returns a new Cron object with default settings.
-func New() *Cron {
-	return &Cron{
+func New(opts ...CronOpt) *Cron {
+	cron := &Cron{
 		idGen:   gtype.NewInt64(),
 		status:  gtype.NewInt(StatusRunning),
 		entries: gmap.NewStrAnyMap(true),
 	}
+	for _, opt := range opts {
+		opt(cron)
+	}
+	return cron
+}
+
+type CronOpt func(cron *Cron)
+
+func WithEtcdMutexBuilder(b EtcdMutexBuilder) CronOpt {
+	return CronOpt(func(cron *Cron) {
+		cron.etcdclient = b
+	})
 }
 
 // AddEntry creates and returns a new Entry object.

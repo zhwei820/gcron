@@ -12,17 +12,25 @@ import (
 	"testing"
 	"time"
 
+	etcdclient "go.etcd.io/etcd/client/v3"
+
 	"github.com/zhwei820/gcron"
 	"github.com/zhwei820/log"
 )
 
 func Test_cronAddSingleton(t *testing.T) {
 	log.InitLogger("test", true, "debug", 3)
-	gcron.AddSingleton(ctx, "* * * * * *", func(ctx context.Context) {
+
+	c, _ := gcron.NewEtcdMutexBuilder(etcdclient.Config{
+		Endpoints: []string{"127.0.0.1:2379"},
+	})
+	cron := gcron.New(gcron.WithEtcdMutexBuilder(c))
+
+	cron.AddOnce(ctx, "* * * * * *", func(ctx context.Context) {
 		log.InfoZ(context.TODO(), "doing")
 		time.Sleep(500 * time.Millisecond)
 	})
-	select {}
+	time.Sleep(50 * time.Second)
 }
 
 func Test_example(t *testing.T) {

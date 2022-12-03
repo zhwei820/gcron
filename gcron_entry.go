@@ -17,6 +17,7 @@ import (
 	"github.com/zhwei820/gcron/gtimer"
 	"github.com/zhwei820/gcron/gtype"
 	"github.com/zhwei820/log"
+	"go.uber.org/zap"
 )
 
 // JobFunc is the timing called job function in cron.
@@ -135,36 +136,26 @@ func (entry *Entry) Close() {
 // gcron.Entry relies on gtimer to implement a scheduled task check for gcron.Entry per second.
 func (entry *Entry) checkAndRun(ctx context.Context) {
 	currentTime := time.Now()
+	fmt.Println("checkAndRun", currentTime)
 	if !entry.schedule.checkMeetAndUpdateLastSeconds(ctx, currentTime) {
-		// intlog.Printf(
-		//	ctx,
-		//	`timely check, current time does not meet cron job "%s"`,
-		//	entry.getJobNameWithPattern(),
-		// )
+		log.WarnZ(ctx, "checkMeetAndUpdateLastSeconds matched")
 		return
 	}
-	// intlog.Printf(
-	//	ctx,
-	//	`timely check, current time meets cron job "%s"`,
-	//	entry.getJobNameWithPattern(),
-	// )
 	switch entry.cron.status.Val() {
 	case StatusStopped:
+		log.WarnZ(ctx, "job stopped", zap.String("name", entry.getJobNameWithPattern()))
 		return
 
 	case StatusClosed:
-		entry.logDebugf(ctx, `cron job "%s" is removed`, entry.getJobNameWithPattern())
+		log.WarnZ(ctx, "job removed", zap.String("name", entry.getJobNameWithPattern()))
 		entry.Close()
 
 	case StatusReady, StatusRunning:
 		defer func() {
 			if exception := recover(); exception != nil {
-				entry.logErrorf(ctx,
-					`cron job "%s(%s)" end with error: %+v`,
-					entry.jobName, entry.schedule.pattern, exception,
-				)
+				log.ErrorZ(ctx, "job failed", zap.String("name", entry.getJobNameWithPattern()))
 			} else {
-				entry.logDebugf(ctx, `cron job "%s" ends`, entry.getJobNameWithPattern())
+				log.ErrorZ(ctx, "job end", zap.String("name", entry.getJobNameWithPattern()))
 			}
 
 			if entry.timerEntry.Status() == StatusClosed {
@@ -181,7 +172,28 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 				}
 			}
 		}
-		entry.logDebugf(ctx, `cron job "%s" starts`, entry.getJobNameWithPattern())
+		if entry.cron.etcdclient != nil {
+
+			m, err := entry.cron.etcdclient.NewMutex(fmt.Sprintf("etcd_gcron/%s/%d", entry.jobName, currentTime.Unix()))
+			if err != nil {
+				log.ErrorZ(ctx, fmt.Sprintf("fail to create etcd mutex for job '%v'", entry.jobName))
+				return
+			}
+			lockCtx, cancel := context.WithTimeout(ctx, time.Second)
+			defer cancel()
+			fmt.Println("lock? lockCtx")
+
+			err = m.Lock(lockCtx)
+			if err == context.DeadlineExceeded {
+				log.DebugZ(ctx, fmt.Sprintf(`cron job "%s" skiped`, entry.getJobNameWithPattern()))
+				return
+			} else if err != nil {
+				log.ErrorZ(ctx, fmt.Sprintf("fail to lock mutex '%v'", m.Key()))
+				return
+			}
+		}
+
+		log.DebugZ(ctx, fmt.Sprintf(`cron job "%s" starts`, entry.getJobNameWithPattern()))
 
 		entry.Job(ctx)
 	}
@@ -189,16 +201,4 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 
 func (entry *Entry) getJobNameWithPattern() string {
 	return fmt.Sprintf(`%s(%s)`, entry.jobName, entry.schedule.pattern)
-}
-
-func (entry *Entry) logDebugf(ctx context.Context, format string, v ...interface{}) {
-	// if logger := entry.cron.GetLogger(); logger != nil {
-	log.DebugZ(ctx, fmt.Sprintf(format, v...))
-	// }
-}
-
-func (entry *Entry) logErrorf(ctx context.Context, format string, v ...interface{}) {
-	// if logger := entry.cron.GetLogger(); logger != nil {
-	log.ErrorZ(ctx, fmt.Sprintf(format, v...))
-	// }
 }
