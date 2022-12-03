@@ -6,24 +6,24 @@
 
 package gtimer_test
 
-// import (
-// 	"context"
-// 	"fmt"
-// 	"time"
+import (
+	"context"
+	"fmt"
+	"time"
 
-// 	"github.com/zhwei820/gcron/gtimer"
-// )
+	"github.com/zhwei820/gcron/gtimer"
+)
 
-// func Example_add() {
-// 	var (
-// 		ctx      = context.Background()
-// 		now      = time.Now()
-// 		interval = 1400 * time.Millisecond
-// 	)
-// 	gtimer.Add(ctx, interval, func(ctx context.Context) {
-// 		fmt.Println(time.Now(), time.Duration(time.Now().UnixNano()-now.UnixNano()))
-// 		now = time.Now()
-// 	})
+func Example_add() {
+	var (
+		ctx      = context.Background()
+		now      = time.Now()
+		interval = 1400 * time.Millisecond
+	)
+	gtimer.Add(ctx, interval, func(ctx context.Context) {
+		fmt.Println(time.Now(), time.Duration(time.Now().UnixNano()-now.UnixNano()))
+		now = time.Now()
+	})
 
-// 	select {}
-// }
+	select {}
+}

@@ -26,16 +26,6 @@ var (
 	defaultCron = New()
 )
 
-// // SetLogger sets the logger for cron.
-// func SetLogger(logger glog.ILogger) {
-// 	defaultCron.SetLogger(logger)
-// }
-
-// // GetLogger returns the logger in the cron.
-// func GetLogger() glog.ILogger {
-// 	return defaultCron.GetLogger()
-// }
-
 // Add adds a timed task to default cron object.
 // A unique `name` can be bound with the timed task.
 // It returns and error if the `name` is already used.
@@ -94,8 +84,8 @@ func Search(name string) *Entry {
 }
 
 // Remove deletes scheduled task which named `name`.
-func Remove(name string) {
-	defaultCron.Remove(name)
+func Remove(ctx context.Context, name string) {
+	defaultCron.Remove(ctx, name)
 }
 
 // Size returns the size of the timed tasks of default cron.
@@ -116,6 +106,6 @@ func Start(name ...string) {
 
 // Stop stops running the specified timed task named `name`.
 // If no`name` specified, it stops the entire cron.
-func Stop(name ...string) {
-	defaultCron.Stop(name...)
+func Stop(ctx context.Context, name ...string) {
+	defaultCron.Stop(ctx, name...)
 }

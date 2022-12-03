@@ -44,7 +44,7 @@ func Test_example(t *testing.T) {
 		array = append(array, 1)
 	}, "cron2")
 	fmt.Println(len(array), cron.Size())
-	cron.Remove("cron2")
+	cron.Remove(gcron.GenCtx(), "cron2")
 	fmt.Println(len(array), cron.Size())
 	time.Sleep(3000 * time.Millisecond)
 	fmt.Println(len(array), cron.Size())

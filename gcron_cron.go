@@ -14,6 +14,8 @@ import (
 	"github.com/zhwei820/gcron/gmap"
 	"github.com/zhwei820/gcron/gtimer"
 	"github.com/zhwei820/gcron/gtype"
+	"github.com/zhwei820/log"
+	"go.uber.org/zap"
 )
 
 type Cron struct {
@@ -169,11 +171,12 @@ func (c *Cron) Start(name ...string) {
 }
 
 // Stop stops running the specified timed task named `name`.
-// If no`name` specified, it stops the entire cron.
-func (c *Cron) Stop(name ...string) {
+// If no `name` specified, it stops the entire cron.
+func (c *Cron) Stop(ctx context.Context, name ...string) {
 	if len(name) > 0 {
 		for _, v := range name {
 			if entry := c.Search(v); entry != nil {
+				log.InfoZ(ctx, "stop job", zap.String("name", v))
 				entry.Stop()
 			}
 		}
@@ -183,8 +186,9 @@ func (c *Cron) Stop(name ...string) {
 }
 
 // Remove deletes scheduled task which named `name`.
-func (c *Cron) Remove(name string) {
+func (c *Cron) Remove(ctx context.Context, name string) {
 	if v := c.entries.Get(name); v != nil {
+		log.InfoZ(ctx, "remove job", zap.String("name", name))
 		v.(*Entry).Close()
 	}
 }

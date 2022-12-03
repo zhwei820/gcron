@@ -17,7 +17,7 @@ import (
 
 var pattern = `(\w+).+\-\-\s*(.+)`
 
-var src = `GF is best! -- John`
+var src = `GF is not bad! -- John`
 
 func Benchmark_GF_IsMatchString(b *testing.B) {
 	for i := 0; i < b.N; i++ {

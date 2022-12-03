@@ -60,31 +60,28 @@ func TestCron_Basic(t *testing.T) {
 	time.Sleep(1200 * time.Millisecond)
 	assert.Equal(t, cron.Size(), 2)
 
-	cron.Remove("delay_add")
+	cron.Remove(gcron.GenCtx(), "delay_add")
 	assert.Equal(t, cron.Size(), 1)
 
 	entry1 := cron.Search("add")
 	entry2 := cron.Search("test-none")
 	assert.NotNil(t, entry1)
-	assert.Equal(t, entry2, nil)
+	assert.Nil(t, entry2)
 
 	// test @ error
 
 	cron = gcron.New()
 	defer cron.Close()
 	_, err := cron.Add(ctx, "@aaa", func(ctx context.Context) {}, "add")
-	if err != nil {
-		panic(err)
-	}
+	assert.NotNil(t, err)
 
 	// test @every error
 
 	cron = gcron.New()
 	defer cron.Close()
 	_, err = cron.Add(ctx, "@every xxx", func(ctx context.Context) {}, "add")
-	if err != nil {
-		panic(err)
-	}
+	assert.NotNil(t, err)
+
 }
 
 func TestCron_Remove(t *testing.T) {
@@ -98,7 +95,7 @@ func TestCron_Remove(t *testing.T) {
 	time.Sleep(1200 * time.Millisecond)
 	assert.Equal(t, len(array), 1)
 
-	cron.Remove("add")
+	cron.Remove(gcron.GenCtx(), "add")
 	assert.Equal(t, len(array), 1)
 	time.Sleep(1200 * time.Millisecond)
 	assert.Equal(t, len(array), 1)
@@ -151,13 +148,13 @@ func TestCron_AddSingleton(t *testing.T) {
 	time.Sleep(1200 * time.Millisecond)
 	assert.Equal(t, cron.Size(), 2)
 
-	cron.Remove("delay_add")
+	cron.Remove(gcron.GenCtx(), "delay_add")
 	assert.Equal(t, cron.Size(), 1)
 
 	entry1 := cron.Search("add")
 	entry2 := cron.Search("test-none")
 	assert.NotNil(t, entry1)
-	assert.Equal(t, entry2, nil)
+	assert.Nil(t, entry2)
 	// keep this
 
 	cron = gcron.New()

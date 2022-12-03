@@ -134,7 +134,8 @@ func (entry *Entry) Close() {
 // checkAndRun is the core timing task check logic.
 // The running times limits feature is implemented by gcron.Entry and cannot be implemented by gtimer.Entry.
 // gcron.Entry relies on gtimer to implement a scheduled task check for gcron.Entry per second.
-func (entry *Entry) checkAndRun(ctx context.Context) {
+func (entry *Entry) checkAndRun(_ context.Context) {
+	ctx := GenCtx() // use new trace id
 	currentTime := time.Now()
 	if !entry.schedule.checkMeetAndUpdateLastSeconds(ctx, currentTime) {
 		return
@@ -154,7 +155,7 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 			if exception := recover(); exception != nil {
 				log.ErrorZ(ctx, "job failed", zap.String("name", entry.getJobNameWithPattern()))
 			} else if err == nil {
-				log.ErrorZ(ctx, "job end", zap.String("name", entry.getJobNameWithPattern()))
+				log.InfoZ(ctx, "job end", zap.String("name", entry.getJobNameWithPattern()))
 			}
 
 			if entry.timerEntry.Status() == StatusClosed {
@@ -192,7 +193,7 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 			}
 		}
 
-		log.DebugZ(ctx, `cron job starts`, zap.Any("name", entry.getJobNameWithPattern()))
+		log.DebugZ(ctx, `job starts`, zap.Any("name", entry.getJobNameWithPattern()))
 
 		entry.Job(ctx)
 	}
