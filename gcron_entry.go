@@ -136,11 +136,10 @@ func (entry *Entry) Close() {
 // gcron.Entry relies on gtimer to implement a scheduled task check for gcron.Entry per second.
 func (entry *Entry) checkAndRun(ctx context.Context) {
 	currentTime := time.Now()
-	fmt.Println("checkAndRun", currentTime)
 	if !entry.schedule.checkMeetAndUpdateLastSeconds(ctx, currentTime) {
-		log.WarnZ(ctx, "checkMeetAndUpdateLastSeconds matched")
 		return
 	}
+	var err error
 	switch entry.cron.status.Val() {
 	case StatusStopped:
 		log.WarnZ(ctx, "job stopped", zap.String("name", entry.getJobNameWithPattern()))
@@ -154,7 +153,7 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 		defer func() {
 			if exception := recover(); exception != nil {
 				log.ErrorZ(ctx, "job failed", zap.String("name", entry.getJobNameWithPattern()))
-			} else {
+			} else if err == nil {
 				log.ErrorZ(ctx, "job end", zap.String("name", entry.getJobNameWithPattern()))
 			}
 
@@ -173,27 +172,27 @@ func (entry *Entry) checkAndRun(ctx context.Context) {
 			}
 		}
 		if entry.cron.etcdclient != nil {
-
-			m, err := entry.cron.etcdclient.NewMutex(fmt.Sprintf("etcd_gcron/%s/%d", entry.jobName, currentTime.Unix()))
-			if err != nil {
-				log.ErrorZ(ctx, fmt.Sprintf("fail to create etcd mutex for job '%v'", entry.jobName))
+			m, errEtcd := entry.cron.etcdclient.NewMutex(fmt.Sprintf("etcd_gcron/%s/%d", entry.jobName, currentTime.Unix()))
+			if errEtcd != nil {
+				log.ErrorZ(ctx, "fail to create etcd mutex for job", zap.Reflect("entry.jobName", entry.jobName))
+				err = errEtcd
 				return
 			}
 			lockCtx, cancel := context.WithTimeout(ctx, time.Second)
 			defer cancel()
-			fmt.Println("lock? lockCtx")
 
-			err = m.Lock(lockCtx)
-			if err == context.DeadlineExceeded {
-				log.DebugZ(ctx, fmt.Sprintf(`cron job "%s" skiped`, entry.getJobNameWithPattern()))
+			errEtcd = m.Lock(lockCtx)
+			if errEtcd == context.DeadlineExceeded {
+				err = errEtcd
 				return
-			} else if err != nil {
-				log.ErrorZ(ctx, fmt.Sprintf("fail to lock mutex '%v'", m.Key()))
+			} else if errEtcd != nil {
+				log.ErrorZ(ctx, "fail to lock mutex", zap.String("m.Key()", m.Key()))
+				err = errEtcd
 				return
 			}
 		}
 
-		log.DebugZ(ctx, fmt.Sprintf(`cron job "%s" starts`, entry.getJobNameWithPattern()))
+		log.DebugZ(ctx, `cron job starts`, zap.Any("name", entry.getJobNameWithPattern()))
 
 		entry.Job(ctx)
 	}

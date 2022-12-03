@@ -1,0 +1,388 @@
+{"log_level":"debug","ts":"2022-12-03 21:33:51.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:51.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:52.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:52.962 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:52.962 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:53.462 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:53.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:53.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:54.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:54.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:54.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:55.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:55.962 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:55.962 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:56.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:56.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:56.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:57.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:57.965 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:57.965 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:58.465 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:58.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:58.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:33:59.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:33:59.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:33:59.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:00.464 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:00.963 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:00.963 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:12.566 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:12.566 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:13.067 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:13.562 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:14.562 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:15.570 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:15.570 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:16.070 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:16.563 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:17.563 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:18.566 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:18.566 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:19.008 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:19.067 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:19.563 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:20.007 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:20.562 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:21.014 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:21.014 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:21.515 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:22.008 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:23.007 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:36.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:36.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:36.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:37.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:38.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:38.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:39.107 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:39.107 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:39.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:40.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:40.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:40.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:40.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:41.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:41.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:42.107 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:42.107 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:42.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:43.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:43.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:43.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:43.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:44.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:44.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:45.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:45.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:45.606 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:46.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:46.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:46.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:46.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:47.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:47.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:48.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:48.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:48.606 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:49.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:49.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:49.885 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:49.885 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:50.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:50.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:51.107 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:51.108 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:51.608 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:52.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:52.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:52.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:52.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:53.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:53.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:54.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:54.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:54.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:55.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:55.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:55.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:55.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:56.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:56.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:57.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:34:57.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:57.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:58.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:58.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:34:58.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:34:58.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:59.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:34:59.866 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:35:00.106 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:35:00.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:35:00.607 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:01.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:01.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:35:01.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:35:01.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:02.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:02.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:35:03.105 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:35:03.106 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:35:03.606 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:04.102 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:04.865 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:35:04.870 CST","caller":"gcron/gcron_entry.go:186","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:35:04.870 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:35:05.103 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:36.138 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:36.138 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:36.638 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:39.135 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:39.135 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:39.636 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:40.408 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:40.409 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:42.136 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:42.136 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:42.637 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:43.409 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:43.409 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:45.135 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:45.135 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:45.636 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:46.410 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:46.410 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:48.134 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:48.134 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:48.635 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:49.408 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:49.408 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:51.136 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:51.136 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:51.637 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:52.407 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:52.407 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:54.135 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:54.135 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:54.635 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:55.408 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:55.408 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:57.137 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:57.137 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:57.637 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:24.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:24.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:24.566 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:27.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:27.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:27.565 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:28.782 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:28.783 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:30.064 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:30.064 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:30.565 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:31.782 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:31.782 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:33.067 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:33.067 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:33.567 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:34.783 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:34.783 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:36.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:36.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:36.566 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:37.783 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:37.783 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:39.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:39.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:39.566 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:40.782 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:40.782 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:42.067 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:42.067 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:42.568 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:43.782 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:43.782 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:45.064 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:45.064 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:45.565 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:46.782 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:46.782 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:48.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:48.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:48.566 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:49.783 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:49.783 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:51.065 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:51.065 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:51.566 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:52.783 CST","caller":"gcron/gcron_entry.go:185","msg":"cron job \"main.main.func1(*/3 * * * * *)\" skiped","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:49:52.783 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:49:54.780 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:49:54.781 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:03.693 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:03.693 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:04.194 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:06.692 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:06.692 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:07.193 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:09.104 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:09.104 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:09.604 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:10.693 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:12.105 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:12.105 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:12.605 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:13.693 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:15.103 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:15.104 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:15.604 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:16.694 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:18.105 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:18.105 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:18.606 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:19.693 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:21.104 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:21.104 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:21.605 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:22.694 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:24.105 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:24.105 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:24.606 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:25.693 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:27.105 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:27.105 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:27.606 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:28.693 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:30.104 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:30.104 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:30.605 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:31.694 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:33.105 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:33.105 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:33.606 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:36.104 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:36.104 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:45.102 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:45.102 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:45.603 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:48.101 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:48.101 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:48.602 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:49.393 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:51.101 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:51.101 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:51.602 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:52.393 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:54.102 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:54.102 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:54.603 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:55.392 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:51:57.101 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:51:57.101 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:57.601 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:51:58.393 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:52:00.102 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"main.main.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:52:00.102 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:52:00.602 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:57:48.137 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:57:48.137 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:48.637 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:57:51.138 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:57:51.138 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:51.639 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:52.681 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:57:54.137 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:57:54.138 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:54.638 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:55.678 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:57:57.696 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:57:57.697 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:57:58.198 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:00.677 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:00.677 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:01.178 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:03.487 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:03.487 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:03.987 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:04.680 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:06.486 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:06.487 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:06.987 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:07.679 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:09.487 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:09.487 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:09.988 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:10.680 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:12.486 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:12.486 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:12.986 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:13.679 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:58:15.486 CST","caller":"gcron/gcron_entry.go:192","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:58:15.486 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:15.987 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:58:16.679 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:27.299 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:27.299 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:27.800 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:30.298 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:30.298 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:30.799 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:33.298 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:33.298 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:33.799 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:36.299 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:36.299 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:36.800 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:39.623 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:39.623 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:40.124 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:42.623 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:42.624 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:43.124 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:45.623 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:45.623 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:46.124 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:48.622 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:48.622 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:49.123 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:51.622 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:51.622 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:52.122 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:54.622 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:54.623 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:55.124 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:01:57.623 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:01:57.623 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:01:58.124 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:00.235 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:00.235 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:00.736 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:03.233 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:03.233 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:03.734 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:06.234 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:06.235 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:06.736 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:09.236 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:09.236 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:09.737 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:12.234 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:12.234 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:12.735 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:15.248 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:15.248 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:15.748 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:18.233 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:18.234 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:18.735 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:21.235 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:21.235 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:21.735 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:24.236 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:24.236 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:24.737 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 22:02:27.235 CST","caller":"gcron/gcron_entry.go:195","msg":"cron job starts","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 22:02:27.235 CST","caller":"example/main.go:26","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 22:02:27.735 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"main.main.func1(*/3 * * * * *)","x_request_id":null}

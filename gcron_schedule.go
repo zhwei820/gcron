@@ -116,7 +116,7 @@ func newSchedule(pattern string) (*cronSchedule, error) {
 				return nil, err
 			}
 			return &cronSchedule{
-				createTimestamp: currentTimestamp,
+				createTimestamp: currentTimestamp / 86400 * 86400, // round by 86400
 				everySeconds:    int64(d.Seconds()),
 				pattern:         pattern,
 				lastTimestamp:   gtype.NewInt64(currentTimestamp),
@@ -129,7 +129,7 @@ func newSchedule(pattern string) (*cronSchedule, error) {
 	// 0 0 0 1 1 2
 	if match, _ := gregex.MatchString(regexForCron, pattern); len(match) == 7 {
 		schedule := &cronSchedule{
-			createTimestamp: currentTimestamp,
+			createTimestamp: currentTimestamp / 86400 * 86400,
 			everySeconds:    0,
 			pattern:         pattern,
 			lastTimestamp:   gtype.NewInt64(currentTimestamp),

@@ -2337,3 +2337,130 @@
 {"log_level":"debug","ts":"2022-12-03 20:48:38.955 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" ends","component":"test","x_request_id":null}
 {"log_level":"debug","ts":"2022-12-03 21:06:46.259 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"github.com/zhwei820/gcron_test.Test_example.func1(@every 2s)\" starts","component":"test","x_request_id":null}
 {"log_level":"debug","ts":"2022-12-03 21:06:46.259 CST","caller":"gcron/gcron_entry.go:204","msg":"cron job \"github.com/zhwei820/gcron_test.Test_example.func1(@every 2s)\" ends","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:20:49.242 CST","caller":"gcron/gcron_entry.go:141","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:20:50.242 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_example.func1(@every 2s)\" starts","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:20:50.242 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_example.func1(@every 2s)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:23:22.787 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:23:22.787 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:23:23.288 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:01.010 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:01.010 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:01.510 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:02.010 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:02.010 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:02.511 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:03.011 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:03.011 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:03.512 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:04.009 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:04.009 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:04.510 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:05.008 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:05.008 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:05.509 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:06.009 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:06.009 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:06.510 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:07.010 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:07.010 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:07.510 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:08.009 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:08.009 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:08.509 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:09.009 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:09.009 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:24:09.509 CST","caller":"gcron/gcron_entry.go:158","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:24:10.008 CST","caller":"gcron/gcron_entry.go:196","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAddSingleton.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:24:10.008 CST","caller":"gcron/gcron_z_example_1_test.go:30","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:10.642 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:10.642 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:11.143 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:11.644 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:11.644 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:12.144 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:12.642 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:12.642 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:13.143 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:13.642 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:13.642 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:14.143 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:14.642 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:14.642 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:15.143 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:15.642 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:15.642 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:32:16.143 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:32:16.645 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:32:16.645 CST","caller":"gcron/gcron_z_example_1_test.go:33","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:42.542 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:42.542 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:43.043 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:43.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:43.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:44.041 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:44.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:44.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:45.042 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:45.542 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:45.542 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:46.042 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:46.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:46.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:47.041 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:47.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:47.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:48.042 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:48.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:48.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:49.042 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:49.541 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:49.541 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:50.042 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:50.542 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:50.542 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:39:51.043 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:39:51.542 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(* * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:39:51.542 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:02.114 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:03.115 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:03.115 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:03.615 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:04.115 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:05.115 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:06.114 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:06.114 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:06.615 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:07.114 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:08.115 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:09.115 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:09.115 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:09.615 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:10.115 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:11.115 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:50.172 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:51.172 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:51.172 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:51.172 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:52.171 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:53.172 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:54.172 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:54.172 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:54.173 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:55.172 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:56.172 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:40:57.172 CST","caller":"gcron/gcron_entry.go:194","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:40:57.172 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:40:57.172 CST","caller":"gcron/gcron_entry.go:157","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"warn","ts":"2022-12-03 21:40:58.172 CST","caller":"gcron/gcron_entry.go:140","msg":"checkMeetAndUpdateLastSeconds matched","component":"test","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:12.561 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:12.561 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:12.561 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:15.560 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:15.560 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:15.560 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:18.560 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:18.560 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:18.560 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}
+{"log_level":"debug","ts":"2022-12-03 21:41:21.560 CST","caller":"gcron/gcron_entry.go:193","msg":"cron job \"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)\" starts","component":"test","x_request_id":null}
+{"log_level":"info","ts":"2022-12-03 21:41:21.560 CST","caller":"gcron/gcron_z_example_1_test.go:31","msg":"doing","component":"test","x_request_id":null}
+{"log_level":"error","ts":"2022-12-03 21:41:21.560 CST","caller":"gcron/gcron_entry.go:156","msg":"job end","component":"test","name":"github.com/zhwei820/gcron_test.Test_cronAdd.func1(*/3 * * * * *)","x_request_id":null}

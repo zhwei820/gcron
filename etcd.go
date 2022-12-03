@@ -2,6 +2,7 @@ package gcron
 
 import (
 	"context"
+	"time"
 
 	etcdclient "go.etcd.io/etcd/client/v3"
 	"go.etcd.io/etcd/client/v3/concurrency"
@@ -22,8 +23,14 @@ type etcdMutexBuilder struct {
 	*etcdclient.Client
 }
 
-func NewEtcdMutexBuilder(config etcdclient.Config) (EtcdMutexBuilder, error) {
-	c, err := etcdclient.New(config)
+func NewEtcdMutexBuilder(config *etcdclient.Config) (EtcdMutexBuilder, error) {
+	c, err := etcdclient.New(*config)
+	if err != nil {
+		return nil, err
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
+	defer cancel()
+	_, err = c.Status(ctx, config.Endpoints[0])
 	if err != nil {
 		return nil, err
 	}
