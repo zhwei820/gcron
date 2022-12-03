@@ -11,8 +11,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/os/glog"
-	"github.com/gogf/gf/v2/os/gtimer"
+	"github.com/zhwei820/gcron/gtimer"
 )
 
 const (
@@ -27,15 +26,15 @@ var (
 	defaultCron = New()
 )
 
-// SetLogger sets the logger for cron.
-func SetLogger(logger glog.ILogger) {
-	defaultCron.SetLogger(logger)
-}
+// // SetLogger sets the logger for cron.
+// func SetLogger(logger glog.ILogger) {
+// 	defaultCron.SetLogger(logger)
+// }
 
-// GetLogger returns the logger in the cron.
-func GetLogger() glog.ILogger {
-	return defaultCron.GetLogger()
-}
+// // GetLogger returns the logger in the cron.
+// func GetLogger() glog.ILogger {
+// 	return defaultCron.GetLogger()
+// }
 
 // Add adds a timed task to default cron object.
 // A unique `name` can be bound with the timed task.

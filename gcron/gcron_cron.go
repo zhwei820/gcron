@@ -10,18 +10,17 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/os/glog"
-	"github.com/gogf/gf/v2/os/gtimer"
+	"github.com/zhwei820/gcron/garray"
+	"github.com/zhwei820/gcron/gmap"
+	"github.com/zhwei820/gcron/gtimer"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 type Cron struct {
 	idGen   *gtype.Int64    // Used for unique name generation.
 	status  *gtype.Int      // Timed task status(0: Not Start; 1: Running; 2: Stopped; -1: Closed)
 	entries *gmap.StrAnyMap // All timed task entries.
-	logger  glog.ILogger    // Logger, it is nil in default.
+	// logger  glog.ILogger    // Logger, it is nil in default.
 }
 
 // New returns a new Cron object with default settings.
@@ -33,15 +32,15 @@ func New() *Cron {
 	}
 }
 
-// SetLogger sets the logger for cron.
-func (c *Cron) SetLogger(logger glog.ILogger) {
-	c.logger = logger
-}
+// // SetLogger sets the logger for cron.
+// func (c *Cron) SetLogger(logger glog.ILogger) {
+// 	c.logger = logger
+// }
 
-// GetLogger returns the logger in the cron.
-func (c *Cron) GetLogger() glog.ILogger {
-	return c.logger
-}
+// // GetLogger returns the logger in the cron.
+// func (c *Cron) GetLogger() glog.ILogger {
+// 	return c.logger
+// }
 
 // AddEntry creates and returns a new Entry object.
 func (c *Cron) AddEntry(ctx context.Context, pattern string, job JobFunc, times int, isSingleton bool, name ...string) (*Entry, error) {

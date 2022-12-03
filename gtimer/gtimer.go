@@ -21,15 +21,13 @@ package gtimer
 import (
 	"context"
 	"strconv"
-	"sync"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 // Timer is the timer manager, which uses ticks to calculate the timing interval.
 type Timer struct {
-	mu      sync.RWMutex
 	queue   *priorityQueue // queue is a priority queue based on heap structure.
 	status  *gtype.Int     // status is the current timer status.
 	ticks   *gtype.Int64   // ticks is the proceeded interval number by the timer.

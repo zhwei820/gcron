@@ -8,15 +8,13 @@ package gcron
 
 import (
 	"context"
+	"fmt"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/zhwei820/gcron/gregex"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 // cronSchedule is the schedule for cron job.
@@ -112,8 +110,8 @@ func newSchedule(pattern string) (*cronSchedule, error) {
 		key := strings.ToLower(match[1])
 		if v, ok := predefinedPatternMap[key]; ok {
 			pattern = v
-		} else if strings.Compare(key, "@every") == 0 {
-			d, err := gtime.ParseDuration(match[2])
+		} else if key == "@every" {
+			d, err := time.ParseDuration(match[2])
 			if err != nil {
 				return nil, err
 			}
@@ -124,7 +122,7 @@ func newSchedule(pattern string) (*cronSchedule, error) {
 				lastTimestamp:   gtype.NewInt64(currentTimestamp),
 			}, nil
 		} else {
-			return nil, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern: "%s"`, pattern)
+			return nil, fmt.Errorf(`invalid pattern: "%s"`, pattern)
 		}
 	}
 	// Handle the common cron pattern, like:
@@ -174,7 +172,7 @@ func newSchedule(pattern string) (*cronSchedule, error) {
 		}
 		return schedule, nil
 	}
-	return nil, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern: "%s"`, pattern)
+	return nil, fmt.Errorf(`invalid pattern: "%s"`, pattern)
 }
 
 // parsePatternItem parses every item in the pattern and returns the result as map, which is used for indexing.
@@ -194,7 +192,7 @@ func parsePatternItem(item string, min int, max int, allowQuestionMark bool) (ma
 		)
 		if len(intervalArray) == 2 {
 			if number, err := strconv.Atoi(intervalArray[1]); err != nil {
-				return nil, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern item: "%s"`, itemElem)
+				return nil, fmt.Errorf(`invalid pattern item: "%s"`, itemElem)
 			} else {
 				interval = number
 			}
@@ -217,7 +215,7 @@ func parsePatternItem(item string, min int, max int, allowQuestionMark bool) (ma
 		// Eg: */5
 		if rangeArray[0] != "*" {
 			if number, err := parsePatternItemValue(rangeArray[0], itemType); err != nil {
-				return nil, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern item: "%s"`, itemElem)
+				return nil, fmt.Errorf(`invalid pattern item: "%s"`, itemElem)
 			} else {
 				rangeMin = number
 				if len(intervalArray) == 1 {
@@ -227,7 +225,7 @@ func parsePatternItem(item string, min int, max int, allowQuestionMark bool) (ma
 		}
 		if len(rangeArray) == 2 {
 			if number, err := parsePatternItemValue(rangeArray[1], itemType); err != nil {
-				return nil, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern item: "%s"`, itemElem)
+				return nil, fmt.Errorf(`invalid pattern item: "%s"`, itemElem)
 			} else {
 				rangeMax = number
 			}
@@ -266,7 +264,7 @@ func parsePatternItemValue(value string, itemType int) (int, error) {
 			}
 		}
 	}
-	return 0, gerror.NewCodef(gcode.CodeInvalidParameter, `invalid pattern value: "%s"`, value)
+	return 0, fmt.Errorf(`invalid pattern value: "%s"`, value)
 }
 
 // checkMeetAndUpdateLastSeconds checks if the given time `t` meets the runnable point for the job.

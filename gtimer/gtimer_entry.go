@@ -8,9 +8,9 @@ package gtimer
 
 import (
 	"context"
+	"fmt"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 // Entry is the timing job.
@@ -48,11 +48,7 @@ func (entry *Entry) Run() {
 		defer func() {
 			if exception := recover(); exception != nil {
 				if exception != panicExit {
-					if v, ok := exception.(error); ok && gerror.HasStack(v) {
-						panic(v)
-					} else {
-						panic(gerror.Newf(`exception recovered: %+v`, exception))
-					}
+					panic(fmt.Errorf(`exception recovered: %+v`, exception))
 				} else {
 					entry.Close()
 					return

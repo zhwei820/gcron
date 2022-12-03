@@ -6,18 +6,10 @@
 
 package gcron_test
 
-import (
-	"context"
-	"time"
-
-	"github.com/gogf/gf/v2/os/gcron"
-	"github.com/gogf/gf/v2/os/glog"
-)
-
-func Example_cronAddSingleton() {
-	gcron.AddSingleton(ctx, "* * * * * *", func(ctx context.Context) {
-		glog.Print(context.TODO(), "doing")
-		time.Sleep(2 * time.Second)
-	})
-	select {}
-}
+// func Example_cronAddSingleton() {
+// 	gcron.AddSingleton(ctx, "* * * * * *", func(ctx context.Context) {
+// 		glog.Print(context.TODO(), "doing")
+// 		time.Sleep(2 * time.Second)
+// 	})
+// 	select {}
+// }

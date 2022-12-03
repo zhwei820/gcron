@@ -10,7 +10,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 func New(options ...TimerOptions) *Timer {

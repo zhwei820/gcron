@@ -8,9 +8,10 @@ package gcron
 
 import (
 	"context"
+	"fmt"
 	"time"
 
-	"github.com/gogf/gf/v2/internal/intlog"
+	"github.com/zhwei820/log"
 )
 
 // getFixedSecond checks, fixes and returns the seconds that have delay fix in some seconds.
@@ -36,15 +37,15 @@ func (s *cronSchedule) getFixedTimestampDelta(ctx context.Context, t time.Time) 
 		lastTimestamp == currentTimestamp-2,
 		lastTimestamp == currentTimestamp-3,
 		lastTimestamp == currentTimestamp:
-		lastTimestamp += 1
+		lastTimestamp++
 		delta = 1
 
 	default:
 		// Too much delay, let's update the last timestamp to current one.
-		intlog.Printf(
+		log.InfoZ(
 			ctx,
-			`too much delay, last timestamp "%d", current "%d"`,
-			lastTimestamp, currentTimestamp,
+			fmt.Sprintf(`too much delay, last timestamp "%d", current "%d"`,
+				lastTimestamp, currentTimestamp),
 		)
 		lastTimestamp = currentTimestamp
 	}

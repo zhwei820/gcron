@@ -1,0 +1,133 @@
+linters-settings:
+  depguard:
+    list-type: blacklist
+  dupl:
+    threshold: 700
+  funlen:
+    lines: 150
+    statements: 100
+  gci:
+    local-prefixes: github.com/golangci/golangci-lint
+  goconst:
+    min-len: 2
+    min-occurrences: 5
+  nestif:
+    min-complexity: 9
+  gocritic:
+    enabled-tags:
+      - diagnostic
+      - experimental
+      - opinionated
+      - performance
+      - style
+    disabled-checks:
+      - dupImport # https://github.com/go-critic/go-critic/issues/845
+      - ifElseChain
+      - octalLiteral
+      - whyNoLint
+      - wrapperFunc
+  gocyclo:
+    min-complexity: 30
+  goimports:
+    local-prefixes: github.com/golangci/golangci-lint
+  gomnd:
+    settings:
+      mnd:
+        # don't include the "operation" and "assign"
+        checks: argument,case,condition,return
+  govet:
+    check-shadowing: true
+    enable-all: true
+    disable:
+      - atomicalign
+      - fieldalignment
+      - nilness
+    settings:
+      printf:
+        funcs:
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Infof
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Warnf
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Errorf
+          - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
+  lll:
+    line-length: 300
+  misspell:
+    locale: US
+  nolintlint:
+    allow-leading-space: true # don't require machine-readable nolint directives (i.e. with no leading space)
+    allow-unused: false # report any unused nolint directives
+    require-explanation: false # don't require an explanation for nolint directives
+    require-specific: false # don't require nolint directives to be specific about which linter is being skipped
+
+linters:
+  disable-all: true
+  enable:
+    - bodyclose
+    - depguard
+    - dupl
+    - errcheck
+    - exportloopref
+    - gocritic
+    - gofmt
+    - goimports
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - revive
+    - misspell
+    - nakedret
+    - nolintlint
+    - staticcheck
+    - stylecheck
+    - typecheck
+    - unparam
+    - unused
+    - whitespace
+    - ineffassign
+    - vet
+    - unconvert
+
+issues:
+  # Excluding configuration per-path, per-linter, per-text and per-source
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - gomnd
+    - path: .go
+      text: "ST1003"
+    - path: .go
+      text: "commentedOutCode"
+    - path: .go
+      text: "paramTypeCombine"
+    - path: .go
+      text: "underef"
+    - path: .go
+      text: "indent-error-flow"
+    - path: .go
+      text: "stutters"
+    - path: .go
+      text: "nestingReduce"
+    - path: .go
+      text: "var-naming"
+    - path: .go
+      text: "unnamedResult"
+    - path: .go
+      text: "docStub"
+    - path: .go
+      text: "should have comment"
+    - path: .go
+      text: "commentFormatting"
+    - path: .go
+      text: "G101"
+    - path: .go
+      text: "S1000"
+   
+run:
+  skip-dirs:
+    - tests
+  skip-files:
+    - _test\.go
+  timeout: 20m
+  concurrency: 8
+  allow-parallel-runners: true

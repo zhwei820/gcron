@@ -11,7 +11,6 @@ import (
 	"encoding/base64"
 	"sync/atomic"
 
-	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/zhwei820/gconv"
 )
 
@@ -71,7 +70,7 @@ func (v *Bytes) UnmarshalJSON(b []byte) error {
 		n, err = base64.StdEncoding.Decode(src, bytes.Trim(b, `"`))
 	)
 	if err != nil {
-		err = gerror.Wrap(err, `base64.StdEncoding.Decode failed`)
+		// err = gerror.Wrap(err, `base64.StdEncoding.Decode failed`)
 		return err
 	}
 	v.Set(src[:n])

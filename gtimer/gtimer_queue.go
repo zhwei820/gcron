@@ -11,7 +11,7 @@ import (
 	"math"
 	"sync"
 
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/zhwei820/gcron/gtype"
 )
 
 // priorityQueue is an abstract data type similar to a regular queue or stack data structure in which

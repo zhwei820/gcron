@@ -13,8 +13,8 @@ package gtimer_test
 // 	"testing"
 // 	"time"
 
-// 	"github.com/gogf/gf/v2/container/garray"
-// 	"github.com/gogf/gf/v2/os/gtimer"
+// 	"github.com/zhwei820/gcron/garray"
+// 	"github.com/zhwei820/gcron/gtimer"
 // 	"github.com/gogf/gf/v2/test/gtest"
 // )
 

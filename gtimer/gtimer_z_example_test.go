@@ -11,7 +11,7 @@ package gtimer_test
 // 	"fmt"
 // 	"time"
 
-// 	"github.com/gogf/gf/v2/os/gtimer"
+// 	"github.com/zhwei820/gcron/gtimer"
 // )
 
 // func Example_add() {

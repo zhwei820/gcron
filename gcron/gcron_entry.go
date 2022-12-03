@@ -13,11 +13,10 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gtimer"
 	"github.com/zhwei820/gconv"
+	"github.com/zhwei820/gcron/gtimer"
+	"github.com/zhwei820/gcron/gtype"
+	"github.com/zhwei820/log"
 )
 
 // JobFunc is the timing called job function in cron.
@@ -50,7 +49,7 @@ type doAddEntryInput struct {
 func (c *Cron) doAddEntry(in doAddEntryInput) (*Entry, error) {
 	if in.Name != "" {
 		if c.Search(in.Name) != nil {
-			return nil, gerror.NewCodef(gcode.CodeInvalidOperation, `cron job "%s" already exists`, in.Name)
+			return nil, fmt.Errorf(`cron job "%s" already exists`, in.Name)
 		}
 	}
 	schedule, err := newSchedule(in.Pattern)
@@ -193,13 +192,13 @@ func (entry *Entry) getJobNameWithPattern() string {
 }
 
 func (entry *Entry) logDebugf(ctx context.Context, format string, v ...interface{}) {
-	if logger := entry.cron.GetLogger(); logger != nil {
-		logger.Debugf(ctx, format, v...)
-	}
+	// if logger := entry.cron.GetLogger(); logger != nil {
+	log.DebugZ(ctx, fmt.Sprintf(format, v...))
+	// }
 }
 
 func (entry *Entry) logErrorf(ctx context.Context, format string, v ...interface{}) {
-	if logger := entry.cron.GetLogger(); logger != nil {
-		logger.Errorf(ctx, format, v...)
-	}
+	// if logger := entry.cron.GetLogger(); logger != nil {
+	log.ErrorZ(ctx, fmt.Sprintf(format, v...))
+	// }
 }
