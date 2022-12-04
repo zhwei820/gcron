@@ -169,6 +169,19 @@ func TestCron_AddSingleton(t *testing.T) {
 
 }
 
+func TestCron_AddDelayOnce(t *testing.T) {
+
+	cron := gcron.New()
+	array := []int{}
+	cron.AddDelayOnce(ctx, time.Now().Unix()+2, func(ctx context.Context) {
+		array = append(array, 1)
+	})
+
+	assert.Equal(t, cron.Size(), 1)
+	time.Sleep(2500 * time.Millisecond)
+	assert.Equal(t, len(array), 1)
+	assert.Equal(t, cron.Size(), 0)
+}
 func TestCron_AddOnce1(t *testing.T) {
 
 	cron := gcron.New()

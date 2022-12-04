@@ -13,6 +13,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/zhwei820/gconv"
 	"github.com/zhwei820/gcron/gregex"
 	"github.com/zhwei820/gcron/gtype"
 )
@@ -105,6 +106,13 @@ var (
 // newSchedule creates and returns a schedule object for given cron pattern.
 func newSchedule(pattern string) (*cronSchedule, error) {
 	var currentTimestamp = time.Now().Unix()
+	if gconv.Int64(pattern) > 0 { // timestamp sec
+		return &cronSchedule{
+			createTimestamp: currentTimestamp / 86400 * 86400, // round by 86400
+			pattern:         pattern,
+			lastTimestamp:   gtype.NewInt64(currentTimestamp),
+		}, nil
+	}
 	// Check if the predefined patterns.
 	if match, _ := gregex.MatchString(`(@\w+)\s*(\w*)\s*`, pattern); len(match) > 0 {
 		key := strings.ToLower(match[1])
@@ -279,6 +287,11 @@ func (s *cronSchedule) checkMeetAndUpdateLastSeconds(ctx context.Context, t time
 		return false
 	}
 
+	patternInt := gconv.Int64(s.pattern)
+	if patternInt > 0 && t.Unix() == patternInt {
+		return true
+	}
+
 	// It checks using normal cron pattern.
 	if _, ok := s.secondMap[s.getFixedSecond(ctx, t)]; !ok {
 		return false
@@ -310,6 +323,10 @@ func (s *cronSchedule) Next(t time.Time) time.Time {
 			count = diff/s.everySeconds + 1
 		)
 		return t.Add(time.Duration(count*s.everySeconds) * time.Second)
+	}
+	patternInt := gconv.Int64(s.pattern)
+	if patternInt > 0 {
+		return time.Unix(patternInt, 0)
 	}
 
 	// Start at the earliest possible time (the upcoming second).

@@ -10,6 +10,7 @@ import (
 	"context"
 	"time"
 
+	"github.com/zhwei820/gconv"
 	"github.com/zhwei820/gcron/garray"
 	"github.com/zhwei820/gcron/gmap"
 	"github.com/zhwei820/gcron/gtimer"
@@ -98,6 +99,13 @@ func (c *Cron) AddTimes(ctx context.Context, pattern string, times int, job JobF
 // It returns and error if the `name` is already used.
 func (c *Cron) AddOnce(ctx context.Context, pattern string, job JobFunc, name ...string) (*Entry, error) {
 	return c.AddEntry(ctx, pattern, job, 1, false, name...)
+}
+
+// AddOnce adds a timed task which can be run only once, run at timestampSec.
+// A unique `name` can be bound with the timed task.
+// It returns and error if the `name` is already used.
+func (c *Cron) AddDelayOnce(ctx context.Context, timestampSec int64, job JobFunc, name ...string) (*Entry, error) {
+	return c.AddEntry(ctx, gconv.String(timestampSec), job, 1, false, name...)
 }
 
 // DelayAddEntry adds a timed task after `delay` time.
