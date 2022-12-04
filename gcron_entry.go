@@ -27,7 +27,7 @@ type JobFunc = gtimer.JobFunc
 type Entry struct {
 	cron       *Cron         // Cron object belonged to.
 	timerEntry *gtimer.Entry // Associated timer Entry.
-	schedule   *cronSchedule // Timed schedule object.
+	Schedule   *cronSchedule // Timed schedule object.
 	jobName    string        // Callback function name(address info).
 	times      *gtype.Int    // Running times limit.
 	infinite   *gtype.Bool   // No times limit.
@@ -60,7 +60,7 @@ func (c *Cron) doAddEntry(in doAddEntryInput) (*Entry, error) {
 	// No limit for `times`, for timer checking scheduling every second.
 	entry := &Entry{
 		cron:     c,
-		schedule: schedule,
+		Schedule: schedule,
 		jobName:  runtime.FuncForPC(reflect.ValueOf(in.Job).Pointer()).Name(),
 		times:    gtype.NewInt(in.Times),
 		infinite: gtype.NewBool(in.Infinite),
@@ -137,7 +137,7 @@ func (entry *Entry) Close() {
 func (entry *Entry) checkAndRun(_ context.Context) {
 	ctx := GenCtx() // use new trace id
 	currentTime := time.Now()
-	if !entry.schedule.checkMeetAndUpdateLastSeconds(ctx, currentTime) {
+	if !entry.Schedule.checkMeetAndUpdateLastSeconds(ctx, currentTime) {
 		return
 	}
 	var err error
@@ -200,5 +200,5 @@ func (entry *Entry) checkAndRun(_ context.Context) {
 }
 
 func (entry *Entry) getJobNameWithPattern() string {
-	return fmt.Sprintf(`%s(%s)`, entry.jobName, entry.schedule.pattern)
+	return fmt.Sprintf(`%s(%s)`, entry.jobName, entry.Schedule.pattern)
 }
