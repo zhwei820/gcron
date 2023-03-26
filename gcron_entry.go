@@ -85,9 +85,7 @@ func (c *Cron) doAddEntry(in doAddEntryInput) (*Entry, error) {
 		gtimer.StatusStopped,
 	)
 	c.entries.Set(entry.Name, entry)
-	if c.isRunning.Load() {
-		entry.timerEntry.Start()
-	}
+	entry.timerEntry.Start()
 	return entry, nil
 }
 
@@ -145,7 +143,7 @@ func (entry *Entry) checkAndRun(_ context.Context) {
 	var err error
 	switch entry.cron.status.Val() {
 	case StatusStopped:
-		log.WarnZ(ctx, "job stopped", zap.String("name", entry.getJobNameWithPattern()))
+		// log.WarnZ(ctx, "job stopped", zap.String("name", entry.getJobNameWithPattern()))
 		return
 
 	case StatusClosed:

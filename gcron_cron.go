@@ -42,7 +42,7 @@ func (c *Cron) startOrStop(ctx context.Context, isLeader bool) error {
 			c.Stop(ctx)
 		}
 	}
-	log.InfoZ(ctx, "startOrStop called")
+	log.InfoZ(ctx, "startOrStop called", zap.Bool("isRunning", isRunning), zap.Reflect("c.status", c.status))
 	return nil
 }
 
@@ -63,13 +63,16 @@ func New(opts ...CronOpt) *Cron {
 // New returns a new Cron object with etcd.
 func NewWithETCD(etcdAddrs, electionName string, opts ...CronOpt) *Cron {
 	cron := New(opts...)
+
+	ctx := context.Background()
+	cron.Stop(ctx)
 	cron.isRunning.Store(false) // init to false, only leader is running
 
 	err := election.Init(etcdAddrs, electionName, cron.startOrStop)
 	if err != nil {
 		panic(err)
 	}
-	election.Start(context.Background())
+	election.Start(ctx)
 	return cron
 }
 
