@@ -42,6 +42,7 @@ func (c *Cron) startOrStop(ctx context.Context, isLeader bool) error {
 			c.Stop(ctx)
 		}
 	}
+	log.InfoZ(ctx, "startOrStop called")
 	return nil
 }
 
@@ -68,7 +69,7 @@ func NewWithETCD(etcdAddrs, electionName string, opts ...CronOpt) *Cron {
 	if err != nil {
 		panic(err)
 	}
-
+	election.Start(context.Background())
 	return cron
 }
 
