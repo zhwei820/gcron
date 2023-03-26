@@ -61,6 +61,7 @@ func New(opts ...CronOpt) *Cron {
 }
 
 // New returns a new Cron object with etcd.
+// electionName should unique by biz
 func NewWithETCD(etcdAddrs, electionName string, opts ...CronOpt) *Cron {
 	cron := New(opts...)
 
