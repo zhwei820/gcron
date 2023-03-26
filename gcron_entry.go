@@ -85,7 +85,9 @@ func (c *Cron) doAddEntry(in doAddEntryInput) (*Entry, error) {
 		gtimer.StatusStopped,
 	)
 	c.entries.Set(entry.Name, entry)
-	entry.timerEntry.Start()
+	if c.isRunning.Load() {
+		entry.timerEntry.Start()
+	}
 	return entry, nil
 }
 
@@ -170,26 +172,6 @@ func (entry *Entry) checkAndRun(_ context.Context) {
 				if entry.timerEntry.SetStatus(StatusClosed) == StatusClosed || times < 0 {
 					return
 				}
-			}
-		}
-		if entry.cron.etcdclient != nil {
-			m, errEtcd := entry.cron.etcdclient.NewMutex(fmt.Sprintf("etcd_gcron/%s/%d", entry.jobName, currentTime.Unix()))
-			if errEtcd != nil {
-				log.ErrorZ(ctx, "fail to create etcd mutex for job", zap.Reflect("entry.jobName", entry.jobName))
-				err = errEtcd
-				return
-			}
-			lockCtx, cancel := context.WithTimeout(ctx, time.Second)
-			defer cancel()
-
-			errEtcd = m.Lock(lockCtx)
-			if errEtcd == context.DeadlineExceeded {
-				err = errEtcd
-				return
-			} else if errEtcd != nil {
-				log.ErrorZ(ctx, "fail to lock mutex", zap.String("m.Key()", m.Key()))
-				err = errEtcd
-				return
 			}
 		}
 

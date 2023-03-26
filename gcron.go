@@ -22,9 +22,11 @@ const (
 )
 
 var (
-	// Default cron object.
-	defaultCron = New()
+	defaultCron *Cron
 )
+
+// !!!! WARNING !! This is a list of api
+// can not use
 
 // Add adds a timed task to default cron object.
 // A unique `name` can be bound with the timed task.

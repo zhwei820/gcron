@@ -8,8 +8,10 @@ package gcron
 
 import (
 	"context"
+	"sync/atomic"
 	"time"
 
+	"github.com/zhwei820/election"
 	"github.com/zhwei820/gconv"
 	"github.com/zhwei820/gcron/garray"
 	"github.com/zhwei820/gcron/gmap"
@@ -23,9 +25,24 @@ type Cron struct {
 	idGen   *gtype.Int64    // Used for unique name generation.
 	status  *gtype.Int      // Timed task status(0: Not Start; 1: Running; 2: Stopped; -1: Closed)
 	entries *gmap.StrAnyMap // All timed task entries.
-	// logger  glog.ILogger    // Logger, it is nil in default.
 
-	etcdclient EtcdMutexBuilder
+	isRunning atomic.Bool
+}
+
+func (c *Cron) startOrStop(ctx context.Context, isLeader bool) error {
+	isRunning := c.isRunning.Load()
+	if isLeader && !isRunning {
+		if c.isRunning.CompareAndSwap(isRunning, true) {
+			c.Start()
+			log.InfoZ(ctx, "===>cron start")
+		}
+	} else if !isLeader && isRunning {
+		if c.isRunning.CompareAndSwap(isRunning, true) {
+			log.InfoZ(ctx, "===>cron stop")
+			c.Stop(ctx)
+		}
+	}
+	return nil
 }
 
 // New returns a new Cron object with default settings.
@@ -38,16 +55,24 @@ func New(opts ...CronOpt) *Cron {
 	for _, opt := range opts {
 		opt(cron)
 	}
+	cron.isRunning.Store(true)
+	return cron
+}
+
+// New returns a new Cron object with etcd.
+func NewWithETCD(etcdAddrs, electionName string, opts ...CronOpt) *Cron {
+	cron := New(opts...)
+	cron.isRunning.Store(false) // init to false, only leader is running
+
+	err := election.Init(etcdAddrs, electionName, cron.startOrStop)
+	if err != nil {
+		panic(err)
+	}
+
 	return cron
 }
 
 type CronOpt func(cron *Cron)
-
-func WithEtcdMutexBuilder(b EtcdMutexBuilder) CronOpt {
-	return CronOpt(func(cron *Cron) {
-		cron.etcdclient = b
-	})
-}
 
 // AddEntry creates and returns a new Entry object.
 func (c *Cron) AddEntry(ctx context.Context, pattern string, job JobFunc, times int, isSingleton bool, name ...string) (*Entry, error) {
